@@ -122,4 +122,26 @@ p {
 #main-footer {
   padding: 2em;
   background: #000;
+  color: #fff;
+  text-align: center;
 }
+
+#main-footer a {
+  color: #2590df;
+  text-decoration: none;
+}
+
+/* Media Query */
+
+@media(min-width: 700px) {
+  grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 25m))
+  }
+
+  .content-wrap, 
+  #section-b ul {
+    grid-column: 2/4;
+
+
+  }
